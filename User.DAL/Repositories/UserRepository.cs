@@ -37,6 +37,7 @@ namespace Users.DAL.Repositories
             {
                 Id = user.Id,
                 EmailId = user.EmailId,
+                EmergencyContactName = user.EmergencyContactName,
                 EmergencyContactEmailId = user.EmergencyContactEmailId,
                 EmergencyContactMobileNumber = user.EmergencyContactMobileNumber,
                 MobileNumber = user.MobileNumber,
@@ -50,6 +51,7 @@ namespace Users.DAL.Repositories
             {
                 Id = x.Id,
                 EmailId = x.EmailId,
+                EmergencyContactName = x.EmergencyContactName,
                 EmergencyContactEmailId = x.EmergencyContactEmailId,
                 EmergencyContactMobileNumber = x.EmergencyContactMobileNumber,
                 MobileNumber = x.MobileNumber,
@@ -63,6 +65,7 @@ namespace Users.DAL.Repositories
             {
                 Id = user.Id,
                 EmailId = user.EmailId,
+                EmergencyContactName = user.EmergencyContactName,
                 EmergencyContactEmailId = user.EmergencyContactEmailId,
                 EmergencyContactMobileNumber = user.EmergencyContactMobileNumber,
                 MobileNumber = user.MobileNumber,
@@ -79,6 +82,7 @@ namespace Users.DAL.Repositories
         {
             var dalUser = _context.Users.FirstOrDefault(x => x.Id == user.Id);
             dalUser.EmailId = user.EmailId;
+            dalUser.EmergencyContactName = user.EmergencyContactName;
             dalUser.EmergencyContactEmailId = user.EmergencyContactEmailId;
             dalUser.EmergencyContactMobileNumber = user.EmergencyContactMobileNumber;
             dalUser.MobileNumber = user.MobileNumber;

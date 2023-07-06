@@ -15,6 +15,9 @@ namespace Users.ReadModels
         [DisplayName("Mobile")]
         public string MobileNumber { get; set; }
 
+        [DisplayName("Emergency Contact Name")]
+        public string EmergencyContactName { get; set; }
+
         [DisplayName("Emergency Contact Email")]
         public string EmergencyContactEmailId { get; set; }
 

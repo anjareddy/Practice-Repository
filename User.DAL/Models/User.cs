@@ -8,6 +8,7 @@ public partial class User
     public string? Name { get; set; }
 
     public string? EmailId { get; set; }
+    public string? EmergencyContactName { get; set; }
 
     public string? MobileNumber { get; set; }
 
