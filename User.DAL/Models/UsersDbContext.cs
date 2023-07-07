@@ -3,13 +3,13 @@ using Users.DAL.Models;
 
 namespace Users.DAL.DBContext;
 
-public partial class UsersContext : DbContext
+public partial class UsersDbContext : DbContext
 {
-    public UsersContext()
+    public UsersDbContext()
     {
     }
 
-    public UsersContext(DbContextOptions<UsersContext> options)
+    public UsersDbContext(DbContextOptions<UsersDbContext> options)
         : base(options)
     {
     }
@@ -20,7 +20,7 @@ public partial class UsersContext : DbContext
     {
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__User__3214EC0702508EFD");
+            entity.HasKey(e => e.Id).HasName("PK_USER");
 
             entity.ToTable("User");
 

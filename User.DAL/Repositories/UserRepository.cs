@@ -7,8 +7,8 @@ namespace Users.DAL.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private UsersContext _context;
-        public UserRepository(UsersContext context) 
+        private UsersDbContext _context;
+        public UserRepository(UsersDbContext context) 
         {
             _context = context;
         }
