@@ -1,13 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
 using Users.DAL.DBContext;
 using Users.DAL.Repositories;
 using Users.DAL.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<UsersContext>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddDbContext<UsersContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")));
 
 var app = builder.Build();
 
