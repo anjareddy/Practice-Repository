@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebMVC", "User.WebMVC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.ReadModels", "User.ReadModels\Users.ReadModels.csproj", "{3A3CFE51-0099-4EE9-9357-B3D00DC2C04C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.WebAPI", "Users.WebAPI\Users.WebAPI.csproj", "{B0973E87-8268-432E-8C7B-FB0393F24C26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebAPI", "Users.WebAPI\Users.WebAPI.csproj", "{B0973E87-8268-432E-8C7B-FB0393F24C26}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Users.Database", "Users.Database\Users.Database.sqlproj", "{E13CF157-85E3-4C6B-9F12-08E713670AB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{B0973E87-8268-432E-8C7B-FB0393F24C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0973E87-8268-432E-8C7B-FB0393F24C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0973E87-8268-432E-8C7B-FB0393F24C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13CF157-85E3-4C6B-9F12-08E713670AB8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
