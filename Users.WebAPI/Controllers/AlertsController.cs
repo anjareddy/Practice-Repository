@@ -22,7 +22,13 @@ namespace Users.WebAPI.Controllers
             _userRepository = userRepository;
         }
 
-        [HttpPost(Name = "AlertEmergencyUser")]
+        [HttpGet]
+        public async Task<string> Ping()
+        {
+            return "Hello from Capstone Alert System!";
+        }
+
+        [HttpPost]
         public async Task AlertEmergencyUser(int userId)
         {
             var user = _userRepository.GetUserById(userId);
