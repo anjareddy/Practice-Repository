@@ -1,0 +1,58 @@
+﻿@model Users.ReadModels.User
+
+@{
+    ViewData["Title"] = "USER: CREATE";
+}
+
+<h1>CREATE</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailId" class="control-label"></label>
+                <input asp-for="EmailId" class="form-control" />
+                <span asp-validation-for="EmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MobileNumber" class="control-label"></label>
+                <input asp-for="MobileNumber" class="form-control" />
+                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencyContactName" class="control-label"></label>
+                <input asp-for="EmergencyContactName" class="form-control" />
+                <span asp-validation-for="EmergencyContactName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencyContactEmailId" class="control-label"></label>
+                <input asp-for="EmergencyContactEmailId" class="form-control" />
+                <span asp-validation-for="EmergencyContactEmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergencyContactMobileNumber" class="control-label"></label>
+                <input asp-for="EmergencyContactMobileNumber" class="form-control" />
+                <span asp-validation-for="EmergencyContactMobileNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
