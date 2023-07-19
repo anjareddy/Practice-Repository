@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebAPI", "Users.WebAP
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Users.Database", "Users.Database\Users.Database.sqlproj", "{E13CF157-85E3-4C6B-9F12-08E713670AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.WebMvcAuthentication", "Users.WebMvcAuthentication\Users.WebMvcAuthentication.csproj", "{5FCC638D-6878-484A-8EA1-AE102C73C6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebMvcAuthentication", "Users.WebMvcAuthentication\Users.WebMvcAuthentication.csproj", "{5FCC638D-6878-484A-8EA1-AE102C73C6C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WorkerService", "Users.WorkerService\Users.WorkerService.csproj", "{3A79C502-2CEF-46B7-B9C3-170431912E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.TimerTriggerFunctionApp", "Users.TimerTriggerFunctionApp\Users.TimerTriggerFunctionApp.csproj", "{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{5FCC638D-6878-484A-8EA1-AE102C73C6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FCC638D-6878-484A-8EA1-AE102C73C6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FCC638D-6878-484A-8EA1-AE102C73C6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A79C502-2CEF-46B7-B9C3-170431912E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A79C502-2CEF-46B7-B9C3-170431912E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A79C502-2CEF-46B7-B9C3-170431912E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A79C502-2CEF-46B7-B9C3-170431912E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
