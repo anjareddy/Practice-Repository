@@ -17,7 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebMvcAuthentication"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WorkerService", "Users.WorkerService\Users.WorkerService.csproj", "{3A79C502-2CEF-46B7-B9C3-170431912E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.TimerTriggerFunctionApp", "Users.TimerTriggerFunctionApp\Users.TimerTriggerFunctionApp.csproj", "{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.TimerTriggerFunctionApp", "Users.TimerTriggerFunctionApp\Users.TimerTriggerFunctionApp.csproj", "{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncTraining", "AsyncTraining\AsyncTraining.csproj", "{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton.TestProject", "Singleton.TestProject\Singleton.TestProject.csproj", "{9A4C4927-3F6F-4345-B697-493DF2629460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryAndAbstractFactory", "FactoryAndAbstractFactory\FactoryAndAbstractFactory.csproj", "{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +67,22 @@ Global
 		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4C4927-3F6F-4345-B697-493DF2629460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4C4927-3F6F-4345-B697-493DF2629460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4C4927-3F6F-4345-B697-493DF2629460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4C4927-3F6F-4345-B697-493DF2629460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
