@@ -7,7 +7,7 @@
             "Dell", "Lenovo", "Asus", "HP", "Apple", "UNKNOWN"
         };
 
-        public static void Run()
+        public static void Execute()
         {
             List<int> testValues = new List<int>()
             {

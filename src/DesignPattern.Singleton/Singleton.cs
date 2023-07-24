@@ -48,11 +48,9 @@ namespace DesignPattern.Singleton
             //    }
             //}
 
-
             //return _instance;
             // return _instance ??= new Singleton();
             return _lazy.Value;
-
         }
     }
 }
