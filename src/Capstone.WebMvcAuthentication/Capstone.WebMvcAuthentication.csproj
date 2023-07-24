@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Users.WebMvcAuthentication-9e5b061d-5267-46f6-b751-7d675ba9645d</UserSecretsId>
+    <UserSecretsId>aspnet-Capstone.WebMvcAuthentication-9e5b061d-5267-46f6-b751-7d675ba9645d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
