@@ -1,43 +1,41 @@
-﻿using System;
+﻿using DesignPattern.AbstractFactory.Abstracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryAndAbstractFactory.Factory
+namespace DesignPattern.AbstractFactory
 {
-    public class FactoryStartup
+    public class Startup
     {
         public static List<string> OEMs = new List<string>()
         {
-                "Dell", "Lenovo", "Asus", "HP", "Apple", "UNKNOWN"
+            "Dell", "Lenovo", "Asus", "HP", "Apple", "UNKNOWN"
         };
+
         public static void Execute()
         {
-            List<int> testValues = new List<int>()
-            {
-                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-            };
-
-            foreach(var oem in OEMs)
+            OEMTestPackageFactory oemTestPackageFactory = new OEMTestPackageFactory();
+            foreach (var oem in OEMs)
             {
                 try
                 {
                     Console.WriteLine("==================================================================");
                     Console.WriteLine(oem.ToUpper());
                     Console.WriteLine("==================================================================");
-                    var calculator = OEMCalculatorFactory.Create(oem);
-                    Console.WriteLine(calculator.CalculateDisplayValue(testValues));
+                    IOEMTestPackage oemTestPackage = oemTestPackageFactory.GetOEMTestPackage(oem);
+                    oemTestPackage.GetTestRunSuite().Run();
+                    oemTestPackage.GetReportGenerator().GenerateReport();
                     Console.WriteLine("==================================================================");
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     Console.WriteLine("==================================================================");
                     Console.WriteLine("EXCEPTION:");
                     Console.WriteLine(e.Message);
                     Console.WriteLine("==================================================================");
                 }
-
             }
         }
     }

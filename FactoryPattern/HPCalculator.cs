@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryAndAbstractFactory.Factory
+namespace DesignPattern.FactoryPattern
 {
-    internal class LenovoCalculator: ICalculator
+    public class HPCalculator: ICalculator
     {
         public int CalculateDisplayValue(List<int> values) 
         {
-            return values.Last();
+            Console.WriteLine("MIN");
+            return values.Min();
         }
     }
 }

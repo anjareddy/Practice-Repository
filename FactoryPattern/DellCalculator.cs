@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryAndAbstractFactory.Factory
+namespace DesignPattern.FactoryPattern
 {
-    internal class DellCalculator:ICalculator
+    public class DellCalculator:ICalculator
     {
-        public int CalculateDisplayValue(List<int> values) 
+        public int CalculateDisplayValue(List<int> values)
         {
+            Console.WriteLine("FIRST");
             return values.First();
         }
     }

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryAndAbstractFactory.Factory
+namespace DesignPattern.FactoryPattern
 {
-    internal class AppleCalculator: ICalculator
+    public class AsusCalculator: ICalculator
     {
         public int CalculateDisplayValue(List<int> values) 
         {
-            return values.Max();
+            Console.WriteLine("AVG");
+            return values.Sum() / values.Count;
         }
     }
 }
