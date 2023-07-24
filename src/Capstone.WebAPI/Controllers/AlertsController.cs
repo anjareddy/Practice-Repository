@@ -78,7 +78,7 @@ namespace Users.WebAPI.Controllers
                 smtp.Host = "smtp.mail.yahoo.com"; //for gmail host
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("anjareddygaddam@yahoo.com", "X*5z&,yHSV4&raq");
+                smtp.Credentials = new NetworkCredential("anjareddygaddam@yahoo.com", "wrwewerwe");
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(message);
             }
