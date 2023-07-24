@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.FactoryPattern
 {
-    internal class OEMTestPackageFactory
+    public class OEMCalculatorFactory
     {
         public ICalculator GetCalculator(string oem)
         {
@@ -17,7 +17,7 @@ namespace DesignPattern.FactoryPattern
         {
             try
             {
-                string className = $"DesignPattern.FactoryPattern.{oem}Calculator";
+                string className = $"DesignPattern.FactoryPattern.ConcreteTypes.{oem}Calculator";
                 Type classType = Type.GetType(className);
                 if (classType != null && classType.IsClass && !classType.IsAbstract)
                 {

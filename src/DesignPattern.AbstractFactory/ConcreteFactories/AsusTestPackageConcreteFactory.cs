@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DesignPattern.AbstractFactory.Abstracts;
 using DesignPattern.AbstractFactory.ConcreteTypes;
+using DesignPattern.FactoryPattern;
 
 namespace DesignPattern.AbstractFactory.ConcreteFactories
 {
@@ -15,9 +16,9 @@ namespace DesignPattern.AbstractFactory.ConcreteFactories
             return new AsusTestRunSuite();
         }
 
-        public IReportGenerator GetReportGenerator()
+        public IReportGenerator GetReportGenerator(ICalculator calculator)
         {
-            return new AsusReportGenerator();
+            return new AsusReportGenerator(calculator);
         }
     }
 }

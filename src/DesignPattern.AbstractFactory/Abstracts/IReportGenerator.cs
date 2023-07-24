@@ -1,4 +1,6 @@
-﻿namespace DesignPattern.AbstractFactory.Abstracts
+﻿using DesignPattern.FactoryPattern;
+
+namespace DesignPattern.AbstractFactory.Abstracts
 {
     public interface IReportGenerator
     {

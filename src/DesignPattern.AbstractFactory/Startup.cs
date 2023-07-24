@@ -1,4 +1,5 @@
 ﻿using DesignPattern.AbstractFactory.Abstracts;
+using DesignPattern.FactoryPattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace DesignPattern.AbstractFactory
         public static void Execute()
         {
             OEMTestPackageFactory oemTestPackageFactory = new OEMTestPackageFactory();
+            OEMCalculatorFactory oemCalculatorFactory = new OEMCalculatorFactory();
             foreach (var oem in OEMs)
             {
                 try
@@ -25,8 +27,9 @@ namespace DesignPattern.AbstractFactory
                     Console.WriteLine(oem.ToUpper());
                     Console.WriteLine("==================================================================");
                     IOEMTestPackage oemTestPackage = oemTestPackageFactory.GetOEMTestPackage(oem);
+                    ICalculator calculator = oemCalculatorFactory.GetCalculator(oem);
                     oemTestPackage.GetTestRunSuite().Run();
-                    oemTestPackage.GetReportGenerator().GenerateReport();
+                    oemTestPackage.GetReportGenerator(calculator).GenerateReport();
                     Console.WriteLine("==================================================================");
                 }
                 catch (Exception e)

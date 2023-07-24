@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPattern.FactoryPattern;
 
 namespace DesignPattern.AbstractFactory.Abstracts
 {
@@ -10,6 +6,6 @@ namespace DesignPattern.AbstractFactory.Abstracts
     {
         ITestRunSuite GetTestRunSuite();
 
-        IReportGenerator GetReportGenerator();
+        IReportGenerator GetReportGenerator(ICalculator calculator);
     }
 }

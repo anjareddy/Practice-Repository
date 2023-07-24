@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.FactoryPattern
+namespace DesignPattern.FactoryPattern.ConcreteTypes
 {
-    public class DellCalculator:ICalculator
+    public class DellCalculator : ICalculator
     {
         public int CalculateDisplayValue(List<int> values)
         {

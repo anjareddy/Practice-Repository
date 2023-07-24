@@ -18,7 +18,7 @@
             {
                 try
                 {
-                    OEMTestPackageFactory calculatorFactory = new OEMTestPackageFactory();
+                    OEMCalculatorFactory calculatorFactory = new OEMCalculatorFactory();
                     Console.WriteLine("==================================================================");
                     Console.WriteLine(oem.ToUpper());
                     Console.WriteLine("==================================================================");

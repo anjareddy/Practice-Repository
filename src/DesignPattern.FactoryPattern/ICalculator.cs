@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.FactoryPattern
 {
-    internal interface ICalculator
+    public interface ICalculator
     {
         int CalculateDisplayValue(List<int> values);
     }

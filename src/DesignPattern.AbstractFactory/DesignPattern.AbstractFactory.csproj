@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPattern.FactoryPattern\DesignPattern.FactoryPattern.csproj" />
+  </ItemGroup>
+
 </Project>
