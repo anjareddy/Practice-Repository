@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\User.ReadModels\Users.ReadModels.csproj" />
+    <ProjectReference Include="..\Capstone.ReadModels\Capstone.ReadModels.csproj" />
   </ItemGroup>
 
 </Project>

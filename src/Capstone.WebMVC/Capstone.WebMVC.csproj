@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="Twilio" Version="6.9.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\User.DAL\Users.DAL.csproj" />
+    <ProjectReference Include="..\Capstone.DAL\Capstone.DAL.csproj" />
+    <ProjectReference Include="..\Capstone.ReadModels\Capstone.ReadModels.csproj" />
   </ItemGroup>
 
 </Project>

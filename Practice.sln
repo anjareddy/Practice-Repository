@@ -3,33 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.DAL", "User.DAL\Users.DAL.csproj", "{5E28C2F7-8236-4CD6-BCF0-56C2A4DC79B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.DAL", "src\Capstone.DAL\Capstone.DAL.csproj", "{5E28C2F7-8236-4CD6-BCF0-56C2A4DC79B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebMVC", "User.WebMVC\Users.WebMVC.csproj", "{1F19B056-FADD-4FD7-8F56-1C1AC054FCD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.WebMVC", "src\Capstone.WebMVC\Capstone.WebMVC.csproj", "{1F19B056-FADD-4FD7-8F56-1C1AC054FCD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.ReadModels", "User.ReadModels\Users.ReadModels.csproj", "{3A3CFE51-0099-4EE9-9357-B3D00DC2C04C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.ReadModels", "src\Capstone.ReadModels\Capstone.ReadModels.csproj", "{3A3CFE51-0099-4EE9-9357-B3D00DC2C04C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebAPI", "Users.WebAPI\Users.WebAPI.csproj", "{B0973E87-8268-432E-8C7B-FB0393F24C26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.WebAPI", "src\Capstone.WebAPI\Capstone.WebAPI.csproj", "{B0973E87-8268-432E-8C7B-FB0393F24C26}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Users.Database", "Users.Database\Users.Database.sqlproj", "{E13CF157-85E3-4C6B-9F12-08E713670AB8}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Capstone.Database", "src\Capstone.Database\Capstone.Database.sqlproj", "{E13CF157-85E3-4C6B-9F12-08E713670AB8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WebMvcAuthentication", "Users.WebMvcAuthentication\Users.WebMvcAuthentication.csproj", "{5FCC638D-6878-484A-8EA1-AE102C73C6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.WebMvcAuthentication", "src\Capstone.WebMvcAuthentication\Capstone.WebMvcAuthentication.csproj", "{5FCC638D-6878-484A-8EA1-AE102C73C6C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.WorkerService", "Users.WorkerService\Users.WorkerService.csproj", "{3A79C502-2CEF-46B7-B9C3-170431912E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.WorkerService", "src\Capstone.WorkerService\Capstone.WorkerService.csproj", "{3A79C502-2CEF-46B7-B9C3-170431912E58}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.TimerTriggerFunctionApp", "Users.TimerTriggerFunctionApp\Users.TimerTriggerFunctionApp.csproj", "{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice.TimerTriggerFunctionApp", "src\Practice.TimerTriggerFunctionApp\Practice.TimerTriggerFunctionApp.csproj", "{EA27EDD4-1AE9-484E-B211-BE736ED7EB01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncTraining", "AsyncTraining\AsyncTraining.csproj", "{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice.AsyncTraining", "src\Practice.AsyncTraining\Practice.AsyncTraining.csproj", "{A4BD25C6-DB3D-4168-84CA-AB8AE5B33C22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Singleton", "Singleton\DesignPattern.Singleton.csproj", "{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Singleton", "src\DesignPattern.Singleton\DesignPattern.Singleton.csproj", "{8ABDD11F-0F3D-4586-BB6C-97557F8FCFD1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.AbstractFactory", "FactoryAndAbstractFactory\DesignPattern.AbstractFactory.csproj", "{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.AbstractFactory", "src\DesignPattern.AbstractFactory\DesignPattern.AbstractFactory.csproj", "{029EAE24-646F-4B82-A0B9-79E3C03ECF4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.AdapterPattern", "AdapterPattern\DesignPattern.AdapterPattern.csproj", "{15444592-514A-44CD-AEC8-3EDB3AE87A9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.AdapterPattern", "src\DesignPattern.AdapterPattern\DesignPattern.AdapterPattern.csproj", "{15444592-514A-44CD-AEC8-3EDB3AE87A9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.FactoryPattern", "FactoryPattern\DesignPattern.FactoryPattern.csproj", "{FD6A6433-D965-4D34-BD19-FFAB335EDDDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.FactoryPattern", "src\DesignPattern.FactoryPattern\DesignPattern.FactoryPattern.csproj", "{FD6A6433-D965-4D34-BD19-FFAB335EDDDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Starter\Starter.csproj", "{09EB31D0-CF3B-4CD2-BC60-2F568C342BD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "src\Starter\Starter.csproj", "{09EB31D0-CF3B-4CD2-BC60-2F568C342BD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{631C43A3-5481-4553-8B62-019578D8C9D4}"
 EndProject

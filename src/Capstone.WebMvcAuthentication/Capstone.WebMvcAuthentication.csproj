@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\User.DAL\Users.DAL.csproj" />
-    <ProjectReference Include="..\User.ReadModels\Users.ReadModels.csproj" />
+    <ProjectReference Include="..\Capstone.DAL\Capstone.DAL.csproj" />
+    <ProjectReference Include="..\Capstone.ReadModels\Capstone.ReadModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>
