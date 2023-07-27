@@ -16,16 +16,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseHttpsRedirection();
+Console.WriteLine(app.Environment.EnvironmentName);
+app.UseHttpsRedirection();
 
-//app.UseAuthentication();
-//app.UseAuthorization();
+app.UseRouting();
+app.UseAuthorization();
 
-//app.MapControllers();
-
-app.Run(async (context) =>
+app.UseEndpoints(endPoints =>
 {
-    await context.Response.WriteAsync("Hello");
+    endPoints.MapControllers();
 });
+
+//app.Run(async (context) =>
+//{
+//    await context.Response.WriteAsync("Hello");
+//});
 
 app.Run();

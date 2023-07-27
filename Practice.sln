@@ -35,7 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{631C43A3-548
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{458D3563-674A-4C8F-AA52-D84C2436513D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.CityInfo.API", "src\Practice.CityInfo.API\Practice.CityInfo.API.csproj", "{8A94676A-1507-433B-BCE4-0E36FB50B75B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice.CityInfo.API", "src\Practice.CityInfo.API\Practice.CityInfo.API.csproj", "{8A94676A-1507-433B-BCE4-0E36FB50B75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Common", "DesignPattern.Common\DesignPattern.Common.csproj", "{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{8A94676A-1507-433B-BCE4-0E36FB50B75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A94676A-1507-433B-BCE4-0E36FB50B75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A94676A-1507-433B-BCE4-0E36FB50B75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{FD6A6433-D965-4D34-BD19-FFAB335EDDDD} = {631C43A3-5481-4553-8B62-019578D8C9D4}
 		{09EB31D0-CF3B-4CD2-BC60-2F568C342BD7} = {631C43A3-5481-4553-8B62-019578D8C9D4}
 		{8A94676A-1507-433B-BCE4-0E36FB50B75B} = {631C43A3-5481-4553-8B62-019578D8C9D4}
+		{46DFFCA0-D14F-4846-BB28-7E5F3BF6AB4F} = {631C43A3-5481-4553-8B62-019578D8C9D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C6FD557-EB32-4155-98C5-DEDAD2965582}

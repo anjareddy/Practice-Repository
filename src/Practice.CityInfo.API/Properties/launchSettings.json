@@ -2,12 +2,12 @@
   "profiles": {
     "Practice.CityInfo.API": {
       "commandName": "Project",
+      "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "launchBrowser": false,
       "applicationUrl": "https://localhost:7250;http://localhost:5272"
     },
     "IIS Express": {
