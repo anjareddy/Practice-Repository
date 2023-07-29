@@ -2,7 +2,7 @@
 
 namespace Practice.CityInfo.API.Models
 {
-    public class CityDto
+    public class CityEntity
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -12,10 +12,10 @@ namespace Practice.CityInfo.API.Models
         {
             get
             {
-                return PointsOfInterest.Count;
+                return PointsOfInterests.Count;
             }
         }
 
-        public ICollection<PointsOfInterestDto> PointsOfInterest { get; set; } = new List<PointsOfInterestDto>();
+        public ICollection<PointsOfInterestEntity> PointsOfInterests { get; set; } = new List<PointsOfInterestEntity>();
     }
 }

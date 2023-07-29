@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\DesignPattern.Common\DesignPattern.Common.csproj" />
+    <ProjectReference Include="..\DesignPattern.Common\DesignPattern.Common.csproj" />
   </ItemGroup>
 
 </Project>

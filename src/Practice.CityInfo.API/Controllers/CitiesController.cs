@@ -7,19 +7,29 @@ namespace Practice.CityInfo.API.Controllers
     [Route("api/[controller]")]
     public class CitiesController : ControllerBase
     {
+        ILogger<CitiesController> _logger;
+        CitiesDataStore _citiesDataStore;
+        public CitiesController(ILogger<CitiesController> logger, CitiesDataStore citiesDataStore)
+        {
+            _logger = logger;
+            _citiesDataStore = citiesDataStore;
+        }
+
         [HttpGet]
         //[HttpGet("api/cities")]
-        public ActionResult<IEnumerable<CityDto>> GetCities()
+        public ActionResult<IEnumerable<CityEntity>> GetCities()
         {
-            return Ok(CitiesDataStore.Current.Cities);
+            _logger.LogInformation($"{nameof(GetCities)} called");
+            return Ok(_citiesDataStore.Cities);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<CityDto> GetCity(int id)
+        public ActionResult<CityEntity> GetCity(int id)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == id);
+            var city = _citiesDataStore.Cities.FirstOrDefault(x => x.Id == id);
             if (city == null)
             {
+                _logger.LogInformation($"{nameof(GetCity)} called: No City found");
                 return NotFound();
             }
 
