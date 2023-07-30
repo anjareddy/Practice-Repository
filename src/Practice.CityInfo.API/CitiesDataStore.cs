@@ -4,26 +4,26 @@ namespace Practice.CityInfo.API
 {
     public class CitiesDataStore
     {
-        public List<CityEntity> Cities { get; set; }
+        public List<CityDto> Cities { get; set; }
 
         public CitiesDataStore() 
         {
-            Cities = new List<CityEntity>()
+            Cities = new List<CityDto>()
             {
-                new CityEntity()
+                new CityDto()
                 {
                     Id = 1,
                     Name = "Newyork",
                     Description = "One of big cities in US",
-                    PointsOfInterests = new List<PointsOfInterestEntity>()
+                    PointsOfInterests = new List<PointsOfInterestDto>()
                     {
-                        new PointsOfInterestEntity
+                        new PointsOfInterestDto
                         {
                             Id = 1,
                             Name = "Twin Towers",
                             Description = "Twin Towers Description"
                         },
-                        new PointsOfInterestEntity
+                        new PointsOfInterestDto
                         {
                             Id = 2,
                             Name = "Edge Point",
@@ -31,20 +31,20 @@ namespace Practice.CityInfo.API
                         }
                     }
                 },
-                new CityEntity()
+                new CityDto()
                 {
                     Id = 2,
                     Name = "Kent",
                     Description = "It has a public university",
-                    PointsOfInterests = new List<PointsOfInterestEntity>()
+                    PointsOfInterests = new List<PointsOfInterestDto>()
                     {
-                        new PointsOfInterestEntity
+                        new PointsOfInterestDto
                         {
                             Id = 3,
                             Name = "Downtown",
                             Description = "Downtown Description"
                         },
-                        new PointsOfInterestEntity
+                        new PointsOfInterestDto
                         {
                             Id = 4,
                             Name = "University Campus",
@@ -52,14 +52,14 @@ namespace Practice.CityInfo.API
                         }
                     }
                 },
-                new CityEntity()
+                new CityDto()
                 {
                     Id = 3,
                     Name = "Cleveland",
                     Description = "It has a public university on Ohio",
-                    PointsOfInterests = new List<PointsOfInterestEntity>()
+                    PointsOfInterests = new List<PointsOfInterestDto>()
                     {
-                        new PointsOfInterestEntity
+                        new PointsOfInterestDto
                         {
                             Id = 5,
                             Name = "Heli Towers",

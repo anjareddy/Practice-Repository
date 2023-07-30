@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Practice.CityInfo.API</name>
+    </assembly>
+    <members>
+        <member name="M:Practice.CityInfo.API.Controllers.CitiesController.GetCity(System.Int32)">
+            <summary>
+            Gets City information
+            </summary>
+            <param name="id">The city Id.</param>
+            <returns>An ActionResult.</returns>
+            <response code="200">Returns the city.</response>
+            <response code="404">Returns when city not found.</response>
+        </member>
+        <member name="M:Practice.CityInfo.API.Controllers.PointsOfInterestController.GetPointOfInterestOfLast(System.Int32,System.Int32)">
+            <summary>
+            This is to add multiple routes
+            </summary>
+            <param name="cityId"></param>
+            <param name="pointofinterestId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Practice.CityInfo.API.Migrations.cityinfodbinitialmigration">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.cityinfodbinitialmigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.cityinfodbinitialmigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.cityinfodbinitialmigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Practice.CityInfo.API.Migrations.addingdesciptioninpoi">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.addingdesciptioninpoi.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.addingdesciptioninpoi.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.addingdesciptioninpoi.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Practice.CityInfo.API.Migrations.dataseeding">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.dataseeding.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.dataseeding.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Practice.CityInfo.API.Migrations.dataseeding.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Practice.CityInfo.API.Models.CityDto">
+            <summary>
+            City Read Model.
+            </summary>
+        </member>
+        <member name="P:Practice.CityInfo.API.Models.CityDto.Id">
+            <summary>
+            City Id
+            </summary>
+        </member>
+        <member name="P:Practice.CityInfo.API.Models.CityDto.Name">
+            <summary>
+            City Name
+            </summary>
+        </member>
+        <member name="P:Practice.CityInfo.API.Models.CityDto.Description">
+            <summary>
+            City Description
+            </summary>
+        </member>
+    </members>
+</doc>
