@@ -36,18 +36,34 @@ namespace Users.WebAPI.Controllers
 
         private async Task AlertUserBySendingMessage(User user)
         {
+            string accountSid = "AC488cf12cc86316c47ae81f831d7cae62";//ORad3f97b2add13898619220d436032bc0
+            string authToken = "46ccf35231e8c1c2fcfd87c0c3225f3e";
+
+            TwilioClient.Init(accountSid, authToken);
+
             try
             {
-                string accountSid = "AC488cf12cc86316c47ae81f831d7cae62";//ORad3f97b2add13898619220d436032bc0
-                string authToken = "3664e0d68bd86b4cb6586c851259bbeb";
-
-                TwilioClient.Init(accountSid, authToken);
-
+               
                 var message = MessageResource.Create(
-                    body: $"IMPORTANT: Hello {user.EmergencyContactName}, {user.Name} is driving car while he is drowsy!!!!!, please alert",
+                    body: $"IMPORTANT: Hello {user.EmergencyContactName}, {user.Name} is driving car while drowsy!!!!!, please alert",
                     from: new Twilio.Types.PhoneNumber("+18447801056"),
                     to: new Twilio.Types.PhoneNumber(user.EmergencyContactMobileNumber)
                 );
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("ERROR WHILE SENDING DROWSINESS ALERT MESSAGE for User {0}", user.Name);
+                var message = MessageResource.Create(
+                    body: $"IMPORTANT: Hello Admin, Error occured while sending message to {user.EmergencyContactName} and {user.Name}!!!!!, please alert the driver.\nError Message: {ex.Message}",
+                    from: new Twilio.Types.PhoneNumber("+18447801056"),
+                    to: new Twilio.Types.PhoneNumber("3305547237")
+                );
+            }
+
+            try
+            {
+                
 
                 var message2 = MessageResource.Create(
                     body: $"IMPORTANT: Hello {user.Name}, it seems you are drowsy, its time to take rest:)",
@@ -58,7 +74,11 @@ namespace Users.WebAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError("ERROR WHILE SENDING DROWSINESS ALERT MESSAGE for User {0}", user.Name);
-                throw;
+                var message = MessageResource.Create(
+                    body: $"IMPORTANT: Hello Admin, Error occured while sending message to {user.EmergencyContactName} and {user.Name}!!!!!, please alert the driver.\nError Message: {ex.Message}",
+                    from: new Twilio.Types.PhoneNumber("+18447801056"),
+                    to: new Twilio.Types.PhoneNumber("3305547237")
+                );
             }
         }
 
