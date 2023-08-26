@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\DesignPattern.Command\DesignPattern.Command.csproj" />
     <ProjectReference Include="..\DesignPattern.AbstractFactory\DesignPattern.AbstractFactory.csproj" />
     <ProjectReference Include="..\DesignPattern.FactoryPattern\DesignPattern.FactoryPattern.csproj" />

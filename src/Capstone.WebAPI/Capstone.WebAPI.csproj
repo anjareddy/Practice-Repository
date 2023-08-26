@@ -4,9 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationInsightsResourceId>/subscriptions/2182c2e9-3aa2-4a54-bd3e-e6935e4edb04/resourceGroups/capstone/providers/microsoft.insights/components/capstone-appinsights</ApplicationInsightsResourceId>
+    <UserSecretsId>3474c53e-d956-4c9b-9f1f-f493c2e1ad4d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Twilio" Version="6.9.0" />
   </ItemGroup>

@@ -5,6 +5,7 @@ using Users.DAL.Repositories.Interfaces;
 using Users.ReadModels;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
+using Microsoft.Extensions.Logging;
 
 namespace Users.WebAPI.Controllers
 {
@@ -24,18 +25,22 @@ namespace Users.WebAPI.Controllers
         [HttpGet]
         public async Task<string> Ping()
         {
+            _logger.LogError("[LOGGED_AS_ERROR]Logging Error from {0}->{1}", nameof(AlertsController), nameof(Ping));
             return "Hello from Capstone Alert System!";
         }
 
         [HttpPost]
         public async Task AlertEmergencyUser(int userId)
         {
+            _logger.LogError("[LOGGED_AS_ERROR]Start of {0}->{1}", nameof(AlertsController), nameof(AlertEmergencyUser));
             var user = _userRepository.GetUserById(userId);
             await AlertUserBySendingMessage(user);
+            _logger.LogError("[LOGGED_AS_ERROR]End of {0}->{1}", nameof(AlertsController), nameof(AlertEmergencyUser));
         }
 
         private async Task AlertUserBySendingMessage(User user)
         {
+            _logger.LogError("[LOGGED_AS_ERROR]Start of {0}->{1}", nameof(AlertsController), nameof(AlertUserBySendingMessage));
             string accountSid = "AC488cf12cc86316c47ae81f831d7cae62";//ORad3f97b2add13898619220d436032bc0
             string authToken = "46ccf35231e8c1c2fcfd87c0c3225f3e";
 
@@ -80,6 +85,7 @@ namespace Users.WebAPI.Controllers
                     to: new Twilio.Types.PhoneNumber("3305547237")
                 );
             }
+            _logger.LogError("[LOGGED_AS_ERROR]End of {0}->{1}", nameof(AlertsController), nameof(AlertUserBySendingMessage));
         }
 
         private async Task SendEmailToUserEmergencyContact(User user)
